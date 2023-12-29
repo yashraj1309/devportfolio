@@ -1,25 +1,41 @@
-import logo from './logo.svg';
-import './App.css';
+import Navigation from "./components/Navigation";
+import Main from "./components/Main";
+import WorkExp from "./components/WorkExp";
+import Skills from "./components/Skills";
+import Certificates from "./components/Certificates";
+import ContactForm from "./components/ContactForm";
+import Footer from "./components/Footer";
+import Projects from "./components/Projects";
+import AOS from "aos";
+import "aos/dist/aos.css";
+import { useEffect } from "react";
 
 function App() {
+  useEffect(() => {
+    AOS.init();
+  }, []);
+  useEffect(() => {
+    AOS.init({
+      disable: "mobile",
+    });
+  }, []);
+    const scrollToSection = (sectionId) => {
+      const section = document.getElementById(sectionId);
+      if (section) {
+        section.scrollIntoView({ behavior: 'smooth' });
+      }
+    };
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <Navigation scrollToSection={scrollToSection}/>
+      <Main />
+      <WorkExp />
+      <Projects/>
+      <Skills />
+      <Certificates />
+      <ContactForm />
+      <Footer />
+    </>
   );
 }
-
 export default App;

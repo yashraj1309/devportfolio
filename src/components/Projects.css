@@ -1,0 +1,166 @@
+.projects-h3-top {
+    color: #8491A0;
+    font-size: 1.1em;
+    letter-spacing: 0.02em;
+    margin-left: 5.5rem;
+    margin-top: 5rem;
+    margin-bottom: 1rem;
+}
+.projects-h1-top  {
+    color: white;
+    font-size: 2.5em;
+    letter-spacing: 0.02em;
+    margin-left: 5.5rem;
+} 
+
+.project-container {
+    box-sizing: border-box;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    border-bottom: 1em solid rgb(36, 36, 36);
+    justify-content: space-between;
+    padding: 3rem 6rem 5rem 6rem;
+  }
+  
+  .project-details {
+    max-width: 27%;
+  }
+  
+  .project-details-header {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 1rem;
+    padding-right: 1rem;
+    margin-bottom: 1rem;
+  }
+  
+  .project-details-header a {
+    margin-top: 3px;
+    transition: 0.2s;
+  }
+  
+  .project-details-header a:hover {
+    transform: scale(1.1);
+  }
+  
+  .tooltip {
+    position: relative;
+    display: inline-block;
+  }
+  
+  .tooltip:hover::after {
+    content: attr(data-tooltip);
+    position: absolute;
+    top: 120%; /* Position the tooltip above the element */
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 0.5em;
+    background-color: #333;
+    color: #fff;
+    border-radius: 5px;
+    white-space: nowrap;
+    font-size: 14px;
+    opacity: 0.9;
+    z-index: 1;
+    pointer-events: none; /* Ensure the tooltip doesn't interfere with hover events */
+  }
+  
+  .project-details h3 {
+    font-size: 1.4em;
+    text-transform: uppercase;
+    letter-spacing: 0.02em;
+    /* color: #689af8; */
+    color: #fca311;
+  }
+  .project-details p {
+    font-size: 16px;
+    /* color: #8491a0; */
+    color: #e5e5e5de;
+    letter-spacing: 0.01em;
+    font-family: "Poppins", sans-serif;
+    margin-bottom: 1rem;
+  }
+  
+  .project-details b {
+    display: inline-block;
+    font-size: 1.1rem;
+    color: #689af8;
+    margin-bottom: 1rem;
+  }
+  
+  .tech-stack-list {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+  .tech-stack-list li {
+    font-size: 14px;
+    border: 1px solid rgba(245, 245, 245, 0.529);
+    color: #e5e5e5;
+    background-color: #14213d;
+    font-weight: 500;
+    border-radius: 4px;
+    margin: 5px;
+    padding: 5px;
+    cursor: pointer;
+    transition: .2s;
+  }
+  .tech-stack-list li:hover {
+    transform:  scale(1.1);
+  }
+  
+  .link-cta {
+    text-decoration: none;
+    color: #689af8;
+    padding-bottom: 2px;
+    border-bottom: 1px solid #8491a0;
+    transition: 0.3s;
+  }
+  
+  .link-cta:hover {
+    padding-left: 8px !important;
+  }
+
+  /* Styles for tablets and iPads */
+@media only screen and (min-device-width: 813px) and (max-device-width: 1024px) {
+  /* Your styles for tablets and iPads go here */
+
+}
+
+
+  /* Mobile Screens */
+  @media only screen and (max-device-width: 812px) {
+    .project-container {
+      flex-direction: column;
+      padding: 2rem;
+      margin-top: 1rem;
+      margin-bottom: 1rem;
+    }
+    .projects-h3-top {
+      margin-top: 3rem;
+      margin-left: auto;
+      text-align: center;
+    }
+    .projects-h1-top {
+      font-size: 2.2rem;
+      margin-left: auto;
+      text-align: center;
+    }
+    .project-details {
+      max-width: max-content;
+      text-align: center;
+      margin-top: 1rem;
+    }
+    .project-details-header {
+      justify-content: center;
+    }
+    .tech-stack-list {
+      justify-content: center;
+    }
+  }
