@@ -1,0 +1,17 @@
+{
+  "files": {
+    "main.css": "/devportfolio/static/css/main.03554f75.css",
+    "main.js": "/devportfolio/static/js/main.f7935db6.js",
+    "static/media/CSS Certificate Hacker Rank.png": "/devportfolio/static/media/CSS Certificate Hacker Rank.c60f74182a1ccf14e22c.png",
+    "static/media/udemyCss.jpg": "/devportfolio/static/media/udemyCss.6696f4a398c777ecd907.jpg",
+    "static/media/amcat.png": "/devportfolio/static/media/amcat.d3dce9b755caf0f6baa8.png",
+    "static/media/yashraj.jpg": "/devportfolio/static/media/yashraj.dcc80e8b921861d8cfd4.jpg",
+    "index.html": "/devportfolio/index.html",
+    "main.03554f75.css.map": "/devportfolio/static/css/main.03554f75.css.map",
+    "main.f7935db6.js.map": "/devportfolio/static/js/main.f7935db6.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.03554f75.css",
+    "static/js/main.f7935db6.js"
+  ]
+}
