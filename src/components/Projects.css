@@ -149,16 +149,23 @@
     }
     .projects-h1-top {
       font-size: 2.2rem;
-      margin-left: auto;
+      margin-left: 2rem;
+      margin-right: 2rem;
       text-align: center;
     }
     .project-details {
       max-width: max-content;
       text-align: center;
       margin-top: 1rem;
+      padding-bottom: 1.5rem;
+      border-bottom: 1px solid lightgray;
+    }
+    .project-details:last-child { 
+      border-bottom: none;
     }
     .project-details-header {
       justify-content: center;
+      gap: .5rem;
     }
     .tech-stack-list {
       justify-content: center;

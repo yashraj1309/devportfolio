@@ -145,6 +145,7 @@ nav div:hover::after {
   margin-top: 3em;
   font-size: 1em;
   letter-spacing: 0.01em;
+  color: #e5e5e5de;
 }
 
 /* Work Experience */
@@ -199,6 +200,7 @@ nav div:hover::after {
   font-size: 1em;
   letter-spacing: 0.02em;
   margin-top: 2em;
+  color: #e5e5e5de;
 }
 
 /* Skill Container */
@@ -241,7 +243,7 @@ nav div:hover::after {
   background-color: #8491a0;
 }
 .skill-1 p {
-  color: #8491a0;
+  color: #e5e5e5de;
   font-size: 1.1rem;
 }
 
@@ -571,7 +573,7 @@ footer .logofooter div a svg:hover {
 
   .main-container div p {
     margin-top: 2em;
-    font-size: 0.8em;
+    font-size: 16px;
     letter-spacing: 0.005em;
   }
 
@@ -618,7 +620,7 @@ footer .logofooter div a svg:hover {
     letter-spacing: 0.01em;
   }
   .con div p {
-    font-size: 0.8em;
+    font-size: 16px;
     margin-top: 1em;
   }
 
@@ -644,12 +646,14 @@ footer .logofooter div a svg:hover {
     font-size: 1.6em;
     letter-spacing: 0.01em;
     margin-bottom: 0.7em;
+    border-bottom: 1.5px solid rgba(128, 128, 128, 0.822);
   }
   .skill-1 h1::after {
     display: none;
   }
   .skill-1 p {
     margin-bottom: 1em;
+    font-size: 16px;
   }
 
   .photobanner {
@@ -676,6 +680,8 @@ footer .logofooter div a svg:hover {
   .certificate h1 {
     font-size: 1.6em;
     margin-bottom: 0.8em;
+    padding-bottom: 3px;
+    border-bottom: 1.5px solid rgba(128, 128, 128, 0.822);  
   }
   .certificate h1::after {
     display: none;
@@ -693,7 +699,7 @@ footer .logofooter div a svg:hover {
 
   /* Contact Form */
   .contact-form form {
-    width: 80%;
+    width: 60%;
   }
 
   /* Footer */
